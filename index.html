@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script type="module" src="js/script.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/signInForm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/createEventForm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/calendar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/createdEvent.css"/>
+    
+    <title>Event Manager</title>
+</head>
+
+<body>
+
+    <header>
+        <h2>EventManager</h2>
+        <nav>
+                <button id="signOutButton" class="sign-out-button" style="display: none;">Sign Out</button>
+        </nav>
+    </header>
+
+    <main>
+        
+        <form id="eventForm" class="event-form" style="display: none;">
+            <h2>Create new event</h2>
+            <input type="text" id="eventTitle" placeholder="Event title" required>
+            <textarea id="eventDescription" placeholder="Event description" required></textarea>
+            <input type="url" id="eventImage" placeholder="Event image URL" required>
+            <select id="locationSelector" class="location-selector" required></select>
+
+            <div class="calendar-container">
+                <div class="calendar-wrapper">
+                    <label for="startDate">Start date</label>
+                    <input type="hidden" id="startDate" name="startDate">
+                    <div id="calendarHeaderStart">
+                        <span id="prevMonthButtonStart">&lt;</span>
+                        <label id="monthYearLabelStart"></label>
+                        <span id="nextMonthButtonStart">&gt;</span>
+                    </div>
+                    <div id="calendarStart"></div>
+                </div>
+
+                <div class="calendar-wrapper">
+                    <label for="endDate">End date</label>
+                    <input type="hidden" id="endDate" name="endDate">
+                    <div id="calendarHeaderEnd">
+                        <span id="prevMonthButtonEnd">&lt;</span>
+                        <label id="monthYearLabelEnd"></label>
+                        <span id="nextMonthButtonEnd">&gt;</span>
+                    </div>
+                    <div id="calendarEnd"></div>
+                </div>
+            </div>
+
+            <button type="submit">Create event</button>
+        </form>
+        
+        <div class="event-controls">
+
+            <select id="filterLocation" class="wide-filter">
+                <option value="all">All Locations</option>
+            </select>
+        </div>
+
+        <div id="eventsContainer" class="events-container"></div>
+    </main>
+</body>
+</html>

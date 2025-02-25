@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="js/signIn.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/signInForm.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    
+    <title>Sign in form</title>
+</head>
+
+<body>
+    <header>
+        <h2>EventManager</h2>
+    </header>
+
+
+    <main>
+        
+        <form id="signInForm" class="signin-form">
+            <h2>Sign in</h2>
+            
+            <input type="text" id="email" placeholder="E-mail" required>
+            <div class="error-email"></div>
+        
+            <input type="password" id="psw" placeholder="Password" required>
+            <div class="error-password"></div>
+
+            <button type="submit" class="button" id="sign-in">Sign in</button>
+        </form>
+    
+    </main>
+</body>
+</html>
