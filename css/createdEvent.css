@@ -1,0 +1,143 @@
+.events-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.event-card {
+  background: #3a3d41;
+  border: 5px solid #b33b00;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s;
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 1rem;
+}
+
+.event-content h3 {
+  color: whitesmoke;
+  margin: 0 0 0.5rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.event-location {
+  color: whitesmoke;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.event-dates {
+  color: whitesmoke;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.event-description {
+  color: whitesmoke;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  line-height: 1.4;
+}
+
+.delete-event {
+  display: block;
+  padding: 9px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border-color: whitesmoke;
+  background: #880808;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.delete-event:hover {
+  background: #d22b2b;
+}
+
+.no-events {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.event-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.event-controls label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.wide-filter {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* responzivnost */
+
+@media (max-width: 768px) {
+  .events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .event-card {
+    width: 90%;
+    max-width: 400px;
+    border-width: 3px;
+    margin: 0 10px 10px;
+  }
+
+  .event-image {
+    height: 150px;
+  }
+
+  .event-content {
+    padding: 0.8rem;
+  }
+
+  .delete-event {
+    width: 40%;
+    padding: 8px 1px;
+  }
+}

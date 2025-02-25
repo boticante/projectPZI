@@ -1,0 +1,56 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #26282a;
+}
+
+li,
+a,
+button {
+  font-family: "Lucida", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+header h2 {
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: default;
+  margin-right: auto;
+}
+
+header h2:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #b33b00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+button {
+  padding: 9px 15px;
+  background: #26282a;
+  border-color: white;
+  border-style: solid;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+button:hover {
+  background-color: #3a3d41;
+  text-decoration: none;
+}

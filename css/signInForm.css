@@ -1,0 +1,83 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 170px;
+  gap: 2rem;
+}
+
+.signin-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #3a3d41;
+  border: 5px solid #b33b00;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.signin-form h2 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 0;
+  color: whitesmoke;
+}
+
+#email,
+#psw {
+  font-family: "Poppins", sans-serif;
+  width: 95%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  background-color: whitesmoke;
+}
+
+.error-email {
+  margin-bottom: 1rem;
+}
+
+.signin-form button {
+  display: block;
+  margin: 0 auto;
+  padding: 9px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border-color: whitesmoke;
+  background: #b33b00;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.signin-form button:hover {
+  background-color: #ff6417;
+  text-decoration: none;
+}
+
+.error-email,
+.error-password {
+  color: #ff474d;
+  font-size: 0.85rem;
+}
+
+/* responzivnost */
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 150px; 
+  }
+
+  .signin-form {
+    padding: 2rem;
+    max-width: 70%;
+  }
+
+  #email,
+  #psw {
+    width: 100%;
+  }
+
+  .signin-form button {
+    width: 100%;
+    padding: 12px;
+  }
+}

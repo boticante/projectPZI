@@ -1,0 +1,98 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #26282a;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background-color: #b33b00;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+td {
+  background-color: whitesmoke;
+}
+
+td:hover {
+  background-color: lightgray;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.currentDate {
+  background-color: #b33b00;
+  color: whitesmoke;
+}
+
+.selectedDate {
+  background-color: wheat;
+  color: black;
+}
+
+#calendarHeaderStart,
+#calendarHeaderEnd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#calendarHeaderStart span,
+#calendarHeaderEnd span {
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+
+#calendarHeaderStart span:hover,
+#calendarHeaderEnd span:hover {
+  background-color: lightgrey;
+  transition: background-color 0.3s ease;
+}
+
+#calendarHeaderStart label,
+#calendarHeaderEnd label {
+  margin: 5px;
+  color: whitesmoke;
+}
+
+#calendarStart,
+#calendarEnd {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* responzivnost */
+
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+
+  td,
+  th {
+    padding: 3px;
+  }
+
+  #calendarHeaderStart,
+  #calendarHeaderEnd {
+    flex-direction: row;
+    justify-content: center; 
+  }
+
+  #calendarHeaderStart span,
+  #calendarHeaderEnd span {
+    padding: 3px 8px;
+    font-size: 0.9rem;
+  }
+}
